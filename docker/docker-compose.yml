@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: mysql
+    container_name: vacinas-api
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "admin123"
+    ports:
+      - 3306:3306
