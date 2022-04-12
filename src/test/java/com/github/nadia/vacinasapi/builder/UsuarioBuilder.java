@@ -3,7 +3,6 @@ package com.github.nadia.vacinasapi.builder;
 import com.github.nadia.vacinasapi.domain.entity.Usuario;
 import com.github.nadia.vacinasapi.domain.entity.Vacina;
 import lombok.Builder;
-import org.hibernate.loader.collection.OneToManyJoinWalker;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

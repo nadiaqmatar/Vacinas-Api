@@ -46,7 +46,7 @@ public class VacinaController {
 
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Vacina cadastrada com sucesso!"),
-            @ApiResponse(responseCode = "400", description = "Vacina não encontrada.")
+            @ApiResponse(responseCode = "400", description = "Usuário não encontrado.")
     })
     @PostMapping
     @Operation(summary = "Salva Vacinas")
