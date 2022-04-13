@@ -1,7 +1,9 @@
 package com.github.nadia.vacinasapi.api.DTO.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.constraints.Email;
@@ -10,6 +12,8 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UsuarioUpdateRequest {
 
     @Schema(description = "Atualiza nome do Usuário", example = "Maria")

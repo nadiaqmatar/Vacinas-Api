@@ -1,15 +1,12 @@
 package com.github.nadia.vacinasapi.builder;
 
-import com.github.nadia.vacinasapi.domain.entity.Usuario;
-import com.github.nadia.vacinasapi.domain.entity.Vacina;
+import com.github.nadia.vacinasapi.api.DTO.response.UsuarioResponse;
 import lombok.Builder;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 @Builder
-public class UsuarioBuilder {
+public class UsuarioResponseBuilder {
 
     @Builder.Default
     private Long id = 1L;
@@ -21,10 +18,9 @@ public class UsuarioBuilder {
     private String email = "maria@teste.com";
     @Builder.Default
     private LocalDate dataNascimento = LocalDate.parse("1994-05-05");
-    @Builder.Default
-    private List<Vacina> vacinas = new ArrayList<>();
 
-    public Usuario toUsuario(){
-        return new Usuario(id,nome,cpf,email,dataNascimento,vacinas);
+    public UsuarioResponse toUsuarioResponse(){
+        return new UsuarioResponse(id,nome,cpf,email,dataNascimento);
     }
+
 }
